@@ -1,0 +1,5 @@
+CREATE TABLE PRODUCT (
+          PROD_ID         NUMBER(7) CONSTRAINT prod_prod_id_pk PRIMARY KEY,
+          PROD_NAME       VARCHAR(60) NOT NULL,
+          PROD_PRICE      VARCHAR(15) NOT NULL,
+          SUPP_ID         NUMBER(1)   CONSTRAINT prod_supp_fk REFERENCES SUPPLIER (SUPP_ID));
